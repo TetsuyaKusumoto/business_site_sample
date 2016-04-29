@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @charset "UTF-8";
 body {
+  margin: 0;
   font-family: 'メイリオ','Hiragino Kaku Gothic Pro', sans-serif;
 }
 .site h1 {
@@ -29,7 +30,7 @@ body {
     width: auto;
     a {
       display: block;
-      padding: 5px;
+      padding: 10px 15px;
       color: #000000;
       font-size: 14px;
       text-decoration: none;
@@ -82,6 +83,26 @@ body {
   font-size: 14px;
 }
 
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #dddddd;
+}
+.boxA, .box4, .box5 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.boxA {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.box4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 @media (min-width: 768px) {
   .boxA:after {
@@ -91,10 +112,10 @@ body {
   }
   .box1 {
     float: left;
-    width: 50%;
+    width: auto;
   }
   .box2 {
-    float: left;
-    width: 50%;
+    float: right;
+    width: auto;
   }
 }
