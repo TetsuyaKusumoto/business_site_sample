@@ -1,0 +1,36 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@charset "UTF-8";
+
+body {
+  font-family: 'メイリオ','Hiragino Kaku Gothic Pro', sans-serif
+}
+
+.site h1 {
+  margin: 0;
+  font-size: 30px;
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .boxA:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box1 {
+    float: left;
+    width: 50%;
+  }
+
+  .box2 {
+    float: left;
+    width: 50px;
+  }
+}
