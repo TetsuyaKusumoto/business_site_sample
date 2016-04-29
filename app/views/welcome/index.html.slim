@@ -1,23 +1,24 @@
 .boxA
-  .box1
-    .site
-      h1
-        a href='#'
-          | TimeSwitch
+  .boxA-inner 
+    .box1
+      .site
+        h1
+          a href='#'
+            | TimeSwitch
 
-  .box2
-    nav.menu
-      ul
-        li
-          a href="#" トップ
-        li
-          a href="#" 沿革
-        li
-          a href="#" 事業紹介
-        li
-          a href="#" 採用情報
-        li
-          a href="#" お問い合わせ
+    .box2
+      nav.menu
+        ul
+          li
+            a href="#" トップ
+          li
+            a href="#" 沿革
+          li
+            a href="#" 事業紹介
+          li
+            a href="#" 採用情報
+          li
+            a href="#" お問い合わせ
           
 .box3
   = image_tag "header.jpg", :class => "topimg"
@@ -28,20 +29,25 @@
       li
         a href="#"
           time datetime="2014-10-15"  10/15
-          |  データセンターのメンテナンスを行います。
+          .text
+            | データセンターのメンテナンスを行います。
       li
         a href="#"
           time datetime="2014-10-05"  10/05
-          |  Android版アプリ バージョン1.2をリリースしました
+          .text
+            | Android版アプリ バージョン1.2をリリースしました
       li 
         a href="#"
           time datetime="2014-09-22"  09/22
-          |  セミナー開催に伴うキャンペーンのお知らせ。
+          .text
+            | セミナー開催に伴うキャンペーンのお知らせ。
       li
         a href="#"
           time datetime="2014-09-15"  09/15
-          |  グラフ表示の切り替え方法がわかりやすくなりました。  
+          .text
+            | グラフ表示の切り替え方法がわかりやすくなりました。
         
 .box5
-  .copyright
-    p copyright &copy; TimeSwitch
+  .box5-inner
+    .copyright
+      p copyright &copy; TimeSwitch

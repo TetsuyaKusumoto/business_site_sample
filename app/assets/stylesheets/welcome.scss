@@ -71,9 +71,25 @@ body {
     }
   }
   time {
-    margin-right: 10px;
+    //margin-right: 10px;
     color: #888888;
     font-weight: bold;
+  }
+  a {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  time {
+    float: left;
+    width: 60px;
+  }
+  .text {
+    float: none;
+    width: auto;
+    margin-left: 60px;
   }
 }
 
@@ -103,7 +119,13 @@ body {
   padding-bottom: 20px;
 }
 
+@media (max-width: 599px){
+  .menu li a {
+    padding: 10px 7px;
+    font-size: 11px;
+  }
 
+}
 @media (min-width: 768px) {
   .boxA:after {
     content: "";
@@ -118,4 +140,16 @@ body {
     float: right;
     width: auto;
   }
+}
+@media (min-width: 1190px) {
+  .box3, .boxA-inner, .box5-inner, .box4 {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .boxA {
+    margin-bottom: 20px;
+    border-bottom: solid 1px #dddddd
+  }
+
 }
