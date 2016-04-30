@@ -236,7 +236,12 @@ body {
   padding-bottom: 10px;
 }
 
-
+@media (max-width: 359px){
+  .site img {
+    width: 225px;
+    height: auto;
+  }
+}
 
 @media (max-width: 599px){
   .menu li a {
@@ -252,7 +257,32 @@ body {
 
 @media (max-width: 767px) {
   #menu {
-    display: none
+    display: none;
+
+  }
+  #menubtn {
+    padding: 6px 12px;
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    &:hover {
+      background-color: #dddddd;
+    }
+    &:focus {
+      outline: none;
+    }
+    span {
+      display: inline-block;
+      text-indent: -9999px;
+    }
+    i {
+      color: #888888;
+      font-size: 18px;
+    }
   }
   .menu {
     ul {
